@@ -37,7 +37,7 @@ const Contact = () => {
       icon: <FaGithub className="w-6 h-6" />,
       name: "GitHub",
       username: "@omkar-desai",
-      link: "https://github.com/omkar-desai",
+      link: "https://github.com/Omkar-Desai01",
       color: "hover:text-[#2dba4e]",
     },
     {

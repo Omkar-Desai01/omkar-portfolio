@@ -7,25 +7,25 @@ const About = () => {
       icon: <FaCode className="w-6 h-6" />,
       title: "Full-Stack Development",
       description:
-        "Proficient in building end-to-end web applications using Node.js, React, and modern JavaScript frameworks with a focus on scalability and performance.",
+        "Experienced in building end-to-end applications using Node.js, React, and Express, with a focus on creating scalable and maintainable solutions.",
     },
     {
       icon: <FaServer className="w-6 h-6" />,
       title: "Backend & APIs",
       description:
-        "Experienced in developing robust backend systems using Node.js, Express, and integrating with various APIs including WhatsApp Business API and third-party services.",
+        "Proficient in developing microservices and integrating WhatsApp Business API, with experience in automating workflows and improving system efficiency.",
     },
     {
       icon: <FaDatabase className="w-6 h-6" />,
       title: "Database & CMS",
       description:
-        "Skilled in SQL databases, Strapi CMS implementation, and designing efficient data management systems for scalable applications.",
+        "Skilled in SQL databases and Strapi CMS, with experience in designing and implementing efficient data management systems and content workflows.",
     },
     {
       icon: <FaCogs className="w-6 h-6" />,
-      title: "DevOps & Tools",
+      title: "Tools & Technologies",
       description:
-        "Proficient with Docker, Vite, and modern development tools, with experience in automating workflows and improving development processes.",
+        "Proficient with Docker, REST APIs, and modern development tools. Experienced in system integration and performance optimization.",
     },
   ];
 
@@ -46,13 +46,12 @@ const About = () => {
             About <span className="text-secondary">Me</span>
           </h2>
           <p className="text-textSecondary max-w-2xl mx-auto">
-            A passionate Full Stack Developer with expertise in modern web
-            technologies and a proven track record of delivering scalable
-            solutions.
+            A dedicated Full Stack Developer specializing in building robust and
+            scalable web applications
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           {skills.map((skill, index) => (
             <motion.div
               key={skill.title}
@@ -85,23 +84,22 @@ const About = () => {
         >
           <div className="max-w-3xl mx-auto space-y-6 text-textSecondary">
             <p>
-              With a strong foundation in Information Technology from NMIMS
-              University and extensive experience in the industry, I specialize
-              in creating efficient, scalable, and user-friendly web
-              applications.
+              Currently working as a Node.js Trainee at OpenSpace Services,
+              where I develop comprehensive backend modules and integrate
+              various systems using modern technologies.
             </p>
             <p>
-              My expertise spans across the full stack, from developing robust
-              backend systems with Node.js and Express to implementing modern
-              frontend solutions with React. I have a proven track record of
-              improving system performance, automating workflows, and delivering
-              high-quality solutions.
+              My experience includes developing WhatsApp chatbots, automating
+              workflows, and creating efficient backend systems. I've worked on
+              projects ranging from custom CMS implementations to large-scale
+              API integrations.
             </p>
             <p>
-              I'm particularly experienced in working with WhatsApp Business
-              API, Strapi CMS, and various database systems. My approach
-              combines technical expertise with strong problem-solving skills
-              and a commitment to delivering excellent results.
+              I'm passionate about creating clean, efficient code and
+              continuously learning new technologies to deliver better
+              solutions. My technical expertise is complemented by strong
+              problem-solving abilities and a collaborative approach to
+              development.
             </p>
           </div>
         </motion.div>

@@ -11,8 +11,7 @@ const Projects = () => {
       technologies: ["Node.js", "Express", "SQL", "React", "Strapi"],
       icon: <FaFlask className="w-12 h-12" />,
       image: "/flowcell-project.jpg",
-      github: "https://github.com/yourusername/flowcell-project",
-      live: "https://flowcell-project.com",
+      github: "https://github.com/Omkar-Desai0101/flowcell-project",
       color: "from-purple-500/20 to-blue-500/20",
     },
     {
@@ -22,8 +21,7 @@ const Projects = () => {
       technologies: ["Node.js", "WhatsApp API", "Python", "REST APIs"],
       icon: <SiWhatsapp className="w-12 h-12" />,
       image: "/coca-cola-bot.jpg",
-      github: "https://github.com/yourusername/coca-cola-bot",
-      live: "https://coca-cola-bot.com",
+      github: "https://github.com/Omkar-Desai0101/whatsapp-bot",
       color: "from-red-500/20 to-orange-500/20",
     },
     {
@@ -33,8 +31,7 @@ const Projects = () => {
       technologies: ["Python", "Docker", "REST APIs", "Automation"],
       icon: <FaDocker className="w-12 h-12" />,
       image: "/whatsapp-automation.jpg",
-      github: "https://github.com/yourusername/whatsapp-automation",
-      live: "https://whatsapp-automation.com",
+      github: "https://github.com/Omkar-Desai0101/whatsapp-automation",
       color: "from-cyan-500/20 to-blue-500/20",
     },
   ];
@@ -110,17 +107,6 @@ const Projects = () => {
                   >
                     <FaGithub className="mr-2" />
                     Code
-                  </motion.a>
-                  <motion.a
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    href={project.live}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-textSecondary hover:text-secondary transition-colors duration-300 flex items-center"
-                  >
-                    <FaExternalLinkAlt className="mr-2" />
-                    Live Demo
                   </motion.a>
                 </div>
               </div>

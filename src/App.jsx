@@ -8,11 +8,13 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import SnakeCursor from "./components/SnakeCursor";
 
 function App() {
   return (
     <Router>
       <div className="bg-primary min-h-screen text-textPrimary">
+        <SnakeCursor />
         <Navbar />
         <AnimatePresence mode="wait">
           <Routes>

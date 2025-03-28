@@ -109,7 +109,7 @@ const Hero = () => {
               className="flex space-x-6 pt-4"
             >
               <a
-                href="https://github.com/omkar-desai"
+                href="https://github.com/Omkar-Desai01"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-textSecondary hover:text-secondary transition-colors duration-300"
@@ -124,14 +124,14 @@ const Hero = () => {
               >
                 <FaLinkedin size={24} />
               </a>
-              <a
+              {/* <a
                 href="https://omkardesai-portfolio.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-textSecondary hover:text-secondary transition-colors duration-300"
               >
                 <FaExternalLinkAlt size={24} />
-              </a>
+              </a> */}
             </motion.div>
           </motion.div>
 

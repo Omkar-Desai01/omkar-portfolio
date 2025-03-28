@@ -5,7 +5,7 @@ const Footer = () => {
   const socialLinks = [
     {
       icon: <FaGithub size={20} />,
-      href: "https://github.com/omkar-desai",
+      href: "https://github.com/Omkar-Desai01",
       label: "GitHub",
     },
     {
