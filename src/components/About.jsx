@@ -30,7 +30,10 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 bg-tertiary relative overflow-hidden">
+    <section
+      id="about"
+      className="py-20 bg-tertiary relative overflow-hidden main-content"
+    >
       {/* Background Elements */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(100,255,218,0.05),transparent_50%)]"></div>
 
