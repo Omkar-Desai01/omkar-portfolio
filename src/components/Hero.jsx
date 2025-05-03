@@ -7,9 +7,29 @@ import {
   FaTwitter,
   FaFileDownload,
   FaExternalLinkAlt,
+  FaTerminal,
+  FaGamepad,
+  FaCode,
+  FaQuestionCircle,
 } from "react-icons/fa";
+import { useState } from "react";
 
-const Hero = () => {
+const Hero = ({ isMatrixActive, setIsMatrixActive }) => {
+  const [showEasterEggs, setShowEasterEggs] = useState(false);
+
+  const triggerTerminal = () => {
+    const event = new KeyboardEvent('keydown', {
+      key: 't',
+      ctrlKey: true,
+      altKey: true
+    });
+    window.dispatchEvent(event);
+  };
+
+  const triggerMatrix = () => {
+    setIsMatrixActive(prev => !prev);
+  };
+
   return (
     <section
       id="home"
@@ -100,6 +120,46 @@ const Hero = () => {
                 <FaFileDownload />
                 Resume
               </a>
+              <div className="relative">
+                <button
+                  onClick={() => setShowEasterEggs(!showEasterEggs)}
+                  className="px-8 py-3 border-2 border-secondary text-secondary font-semibold rounded-lg hover:bg-secondary/10 transition-colors duration-300 flex items-center gap-2 group"
+                >
+                  <FaQuestionCircle />
+                  <span>Easter Eggs</span>
+                </button>
+                
+                {/* Easter Eggs Menu */}
+                {showEasterEggs && (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: 10 }}
+                    className="absolute top-full left-0 mt-2 w-64 bg-primary border-2 border-secondary rounded-lg shadow-lg p-4 z-50"
+                  >
+                    <div className="space-y-3">
+                      <button
+                        onClick={triggerTerminal}
+                        className="w-full flex items-center gap-2 px-4 py-2 text-secondary hover:bg-secondary/10 rounded-lg transition-colors duration-300"
+                      >
+                        <FaTerminal />
+                        <span>Terminal (Ctrl + Alt + T)</span>
+                      </button>
+                      <button
+                        onClick={triggerMatrix}
+                        className="w-full flex items-center gap-2 px-4 py-2 text-secondary hover:bg-secondary/10 rounded-lg transition-colors duration-300"
+                      >
+                        <FaCode />
+                        <span>Matrix Effect {isMatrixActive ? '(ON)' : '(OFF)'}</span>
+                      </button>
+                      <div className="px-4 py-2 text-sm text-textSecondary">
+                        <p>Try the Konami Code:</p>
+                        <p className="font-mono mt-1">↑↑↓↓←→←→BA</p>
+                      </div>
+                    </div>
+                  </motion.div>
+                )}
+              </div>
             </motion.div>
 
             <motion.div
@@ -186,6 +246,9 @@ const Hero = () => {
           />
         </div>
       </motion.div>
+
+      {/* Hidden Matrix Trigger */}
+      <div className="matrix-trigger fixed top-4 left-4 w-8 h-8 cursor-pointer opacity-0 hover:opacity-100 transition-opacity" />
     </section>
   );
 };
