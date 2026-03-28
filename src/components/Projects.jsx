@@ -1,38 +1,35 @@
 import { motion } from "framer-motion";
-import { FaGithub, FaExternalLinkAlt, FaFlask, FaDocker } from "react-icons/fa";
-import { SiWhatsapp } from "react-icons/si";
+import { FaGithub, FaExternalLinkAlt, FaRobot, FaCubes, FaNpm } from "react-icons/fa";
+import { SiLangchain } from "react-icons/si";
 
 const Projects = () => {
   const projects = [
     {
-      title: "Flowcell Project",
+      title: "Enterprise AI Chatbot NPM Package",
       description:
-        "Developed key modules such as Project Master, Flowcell Master, and Unit Master, integrating third-party services with well-structured APIs and improving data consistency.",
-      technologies: ["Node.js", "Express", "SQL", "React", "Strapi"],
-      icon: <FaFlask className="w-12 h-12" />,
-      image: "/flowcell-project.jpg",
-      github: "https://github.com/Omkar-Desai0101/flowcell-project",
+        "Engineered and maintained a widely adopted internal NPM package (React + TypeScript) delivering plug-and-play AI chatbot integration in under 10 lines of code. Standardised AI adoption across all internal development teams and became the company default for new projects.",
+      technologies: ["React", "TypeScript", "NPM", "AI/LLM", "SDK"],
+      icon: <FaNpm className="w-12 h-12" />,
+      github: "https://github.com/Omkar-Desai01",
       color: "from-purple-500/20 to-blue-500/20",
     },
     {
-      title: "Coca-Cola Bot",
+      title: "AI-Powered Autonomous Web Development",
       description:
-        "Developed a custom lead generation bot integrated with proprietary systems to enhance customer engagement and streamline data collection.",
-      technologies: ["Node.js", "WhatsApp API", "Python", "REST APIs"],
-      icon: <SiWhatsapp className="w-12 h-12" />,
-      image: "/coca-cola-bot.jpg",
-      github: "https://github.com/Omkar-Desai0101/whatsapp-bot",
-      color: "from-red-500/20 to-orange-500/20",
+        "Architected an end-to-end agentic web development system using Node.js and LangChain with specialised AI agents (Project Manager, Developer, QA). Implemented an interactive feedback loop enabling the PM agent to dynamically clarify ambiguous requirements before code generation.",
+      technologies: ["Node.js", "LangChain", "AI Agents", "LLM", "Automation"],
+      icon: <FaRobot className="w-12 h-12" />,
+      github: "https://github.com/Omkar-Desai01",
+      color: "from-cyan-500/20 to-green-500/20",
     },
     {
-      title: "WhatsApp API Docker Automation",
+      title: "Flowcell Enterprise Platform",
       description:
-        "Automated WhatsApp API upgrades using Python and REST APIs, reducing manual effort by 50% and improving system stability.",
-      technologies: ["Python", "Docker", "REST APIs", "Automation"],
-      icon: <FaDocker className="w-12 h-12" />,
-      image: "/whatsapp-automation.jpg",
-      github: "https://github.com/Omkar-Desai0101/whatsapp-automation",
-      color: "from-cyan-500/20 to-blue-500/20",
+        "Developed key modules (Project Master, Unit Master, Password & Profile Management) with third-party API integrations, improving data consistency and reducing manual configuration overhead.",
+      technologies: ["Node.js", "Express", "MySQL", "React", "REST APIs"],
+      icon: <FaCubes className="w-12 h-12" />,
+      github: "https://github.com/Omkar-Desai01",
+      color: "from-orange-500/20 to-red-500/20",
     },
   ];
 
@@ -53,11 +50,11 @@ const Projects = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl sm:text-4xl font-bold mb-4">
-            Featured <span className="text-secondary">Projects</span>
+            Key <span className="text-secondary">Projects</span>
           </h2>
           <p className="text-textSecondary max-w-2xl mx-auto">
-            Here are some of my recent projects that showcase my skills and
-            experience.
+            Here are some of my key projects that showcase my expertise in
+            enterprise development and AI integration.
           </p>
         </motion.div>
 

@@ -8,16 +8,25 @@ import {
   FaNodeJs,
   FaPython,
   FaDocker,
+  FaAws,
+  FaGitAlt,
+  FaHtml5,
+  FaCss3Alt,
+  FaJenkins,
 } from "react-icons/fa";
 import {
   SiExpress,
   SiRedux,
   SiSequelize,
   SiStrapi,
-  SiTailwindcss,
   SiTypescript,
   SiMongodb,
   SiPostgresql,
+  SiMysql,
+  SiVite,
+  SiJira,
+  SiBootstrap,
+  SiLangchain,
 } from "react-icons/si";
 
 const Skills = () => {
@@ -27,55 +36,70 @@ const Skills = () => {
       title: "Languages",
       color: "from-blue-500/20 to-cyan-500/20",
       skills: [
-        { name: "JavaScript", icon: <FaCode /> },
+        { name: "JavaScript (ES6+)", icon: <FaCode /> },
         { name: "TypeScript", icon: <SiTypescript /> },
         { name: "Python", icon: <FaPython /> },
         { name: "SQL", icon: <FaDatabase /> },
+        { name: "HTML5", icon: <FaHtml5 /> },
+        { name: "CSS3", icon: <FaCss3Alt /> },
+      ],
+    },
+    {
+      icon: <FaReact className="w-8 h-8" />,
+      title: "Frontend",
+      color: "from-purple-500/20 to-pink-500/20",
+      skills: [
+        { name: "React.js", icon: <FaReact /> },
+        { name: "Redux", icon: <SiRedux /> },
+        { name: "Bootstrap", icon: <SiBootstrap /> },
+        { name: "Responsive Design", icon: <FaCode /> },
       ],
     },
     {
       icon: <FaServer className="w-8 h-8" />,
-      title: "Frameworks/Libraries",
-      color: "from-purple-500/20 to-pink-500/20",
+      title: "Backend",
+      color: "from-green-500/20 to-emerald-500/20",
       skills: [
-        { name: "React.js", icon: <FaReact /> },
         { name: "Node.js", icon: <FaNodeJs /> },
-        { name: "Express", icon: <SiExpress /> },
-        { name: "Redux", icon: <SiRedux /> },
-        { name: "Sequelize", icon: <SiSequelize /> },
-        { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+        { name: "Express.js", icon: <SiExpress /> },
+        { name: "RESTful APIs", icon: <FaServer /> },
+        { name: "Microservices", icon: <FaServer /> },
+        { name: "LangChain", icon: <FaCode /> },
       ],
     },
     {
       icon: <FaDatabase className="w-8 h-8" />,
-      title: "Databases & CMS",
-      color: "from-green-500/20 to-emerald-500/20",
+      title: "Databases",
+      color: "from-yellow-500/20 to-amber-500/20",
       skills: [
-        { name: "MongoDB", icon: <SiMongodb /> },
+        { name: "MySQL", icon: <SiMysql /> },
         { name: "PostgreSQL", icon: <SiPostgresql /> },
-        { name: "Strapi", icon: <SiStrapi /> },
+        { name: "MongoDB", icon: <SiMongodb /> },
+        { name: "Sequelize ORM", icon: <SiSequelize /> },
       ],
     },
     {
       icon: <FaTools className="w-8 h-8" />,
-      title: "Tools & Methods",
+      title: "DevOps & Tools",
       color: "from-orange-500/20 to-red-500/20",
       skills: [
-        { name: "Git", icon: <FaCode /> },
+        { name: "AWS", icon: <FaAws /> },
         { name: "Docker", icon: <FaDocker /> },
-        { name: "REST APIs", icon: <FaServer /> },
+        { name: "Git/GitHub", icon: <FaGitAlt /> },
+        { name: "Jenkins", icon: <FaJenkins /> },
         { name: "CI/CD", icon: <FaTools /> },
+        { name: "Vite", icon: <SiVite /> },
+        { name: "Strapi CMS", icon: <SiStrapi /> },
+        { name: "JIRA", icon: <SiJira /> },
       ],
     },
   ];
 
-  const softSkills = [
-    "Problem Solving",
-    "Team Collaboration",
-    "Communication",
-    "Adaptability",
-    "Time Management",
-    "Critical Thinking",
+  const practices = [
+    "Agile/Scrum",
+    "Unit Testing",
+    "Code Review",
+    "Technical Documentation",
   ];
 
   return (
@@ -96,18 +120,18 @@ const Skills = () => {
           </h2>
           <p className="text-textSecondary max-w-2xl mx-auto">
             A comprehensive overview of my technical expertise and the tools I
-            work with.
+            work with across the full stack.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
           {skillCategories.map((category, index) => (
             <motion.div
               key={category.title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.8, delay: index * 0.2 }}
+              transition={{ duration: 0.8, delay: index * 0.15 }}
               className="group relative"
             >
               <div
@@ -152,9 +176,9 @@ const Skills = () => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="text-center"
         >
-          <h3 className="text-2xl font-semibold mb-8">Soft Skills</h3>
+          <h3 className="text-2xl font-semibold mb-8">Practices & Methodologies</h3>
           <div className="flex flex-wrap justify-center gap-4">
-            {softSkills.map((skill, index) => (
+            {practices.map((skill, index) => (
               <motion.div
                 key={skill}
                 initial={{ opacity: 0, scale: 0.8 }}

@@ -85,7 +85,7 @@ const Hero = ({ isMatrixActive, setIsMatrixActive }) => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-3xl sm:text-5xl text-textSecondary font-semibold"
             >
-              Full Stack Developer
+              Full Stack Engineer
             </motion.h2>
 
             <motion.p
@@ -94,9 +94,10 @@ const Hero = ({ isMatrixActive, setIsMatrixActive }) => {
               transition={{ duration: 0.8, delay: 0.5 }}
               className="text-lg sm:text-xl text-textSecondary max-w-2xl"
             >
-              Passionate about crafting beautiful and functional web
-              experiences. Specializing in modern web technologies and creating
-              elegant solutions to complex problems.
+              3+ years building enterprise-grade web applications across
+              healthcare, logistics, and industrial sectors. Specialist in
+              legacy system modernisation, scalable microservices, and
+              integrating LLM-powered workflows into production pipelines.
             </motion.p>
 
             <motion.div
@@ -184,14 +185,6 @@ const Hero = ({ isMatrixActive, setIsMatrixActive }) => {
               >
                 <FaLinkedin size={24} />
               </a>
-              {/* <a
-                href="https://omkardesai-portfolio.netlify.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-textSecondary hover:text-secondary transition-colors duration-300"
-              >
-                <FaExternalLinkAlt size={24} />
-              </a> */}
             </motion.div>
           </motion.div>
 

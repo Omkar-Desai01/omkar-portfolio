@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaCode, FaServer, FaDatabase, FaCogs } from "react-icons/fa";
+import { FaCode, FaServer, FaDatabase, FaCogs, FaRobot, FaBrain } from "react-icons/fa";
 
 const About = () => {
   const skills = [
@@ -7,25 +7,25 @@ const About = () => {
       icon: <FaCode className="w-6 h-6" />,
       title: "Full-Stack Development",
       description:
-        "Experienced in building end-to-end applications using Node.js, React, and Express, with a focus on creating scalable and maintainable solutions.",
+        "Experienced in building end-to-end enterprise applications using Node.js, React.js, and Express.js, with a focus on scalable and maintainable solutions across healthcare, logistics, and industrial sectors.",
     },
     {
       icon: <FaServer className="w-6 h-6" />,
-      title: "Backend & APIs",
+      title: "Microservices & APIs",
       description:
-        "Proficient in developing microservices and integrating WhatsApp Business API, with experience in automating workflows and improving system efficiency.",
+        "Architected 40+ backend modules integrating RESTful APIs across 5+ client projects. Led a critical PHP-to-Node.js migration that cut API response times by 40%.",
+    },
+    {
+      icon: <FaRobot className="w-6 h-6" />,
+      title: "AI & LLM Integration",
+      description:
+        "Engineered an internal AI chatbot NPM package adopted across all company projects. Built agentic AI workflows using LangChain with specialised agents for autonomous development.",
     },
     {
       icon: <FaDatabase className="w-6 h-6" />,
-      title: "Database & CMS",
+      title: "Database & Optimisation",
       description:
-        "Skilled in SQL databases and Strapi CMS, with experience in designing and implementing efficient data management systems and content workflows.",
-    },
-    {
-      icon: <FaCogs className="w-6 h-6" />,
-      title: "Tools & Technologies",
-      description:
-        "Proficient with Docker, REST APIs, and modern development tools. Experienced in system integration and performance optimization.",
+        "Skilled in MySQL, PostgreSQL, and MongoDB with Sequelize ORM. Optimised SQL data models and queries, improving application performance by 30% and enhancing data retrieval speeds.",
     },
   ];
 
@@ -49,8 +49,9 @@ const About = () => {
             About <span className="text-secondary">Me</span>
           </h2>
           <p className="text-textSecondary max-w-2xl mx-auto">
-            A dedicated Full Stack Developer specializing in building robust and
-            scalable web applications
+            Full Stack Engineer with 3+ years building enterprise-grade web
+            applications and integrating AI-powered workflows into production
+            pipelines
           </p>
         </motion.div>
 
@@ -87,22 +88,23 @@ const About = () => {
         >
           <div className="max-w-3xl mx-auto space-y-6 text-textSecondary">
             <p>
-              Currently working as a Node.js Trainee at OpenSpace Services,
-              where I develop comprehensive backend modules and integrate
-              various systems using modern technologies.
+              Currently working as a Full Stack Software Engineer at OpenSpace
+              Services, where I lead end-to-end development for enterprise
+              client Yazaki, architecting scalable solutions with MySQL,
+              React.js, and Node.js.
             </p>
             <p>
-              My experience includes developing WhatsApp chatbots, automating
-              workflows, and creating efficient backend systems. I've worked on
-              projects ranging from custom CMS implementations to large-scale
-              API integrations.
+              My experience spans developing WhatsApp chatbots for clients like
+              Netflix Turkey and Coca-Cola India (handling 20,000+ monthly
+              interactions), automating data pipelines, and spearheading
+              legacy system modernisations that significantly improve
+              performance and scalability.
             </p>
             <p>
-              I'm passionate about creating clean, efficient code and
-              continuously learning new technologies to deliver better
-              solutions. My technical expertise is complemented by strong
-              problem-solving abilities and a collaborative approach to
-              development.
+              Selected to represent the engineering team in the company's
+              internal AI Centre of Excellence (CoE) — I evaluate and onboard
+              LLM tooling and AI-assisted workflows that measurably reduce
+              developer task time across active projects.
             </p>
           </div>
         </motion.div>

@@ -79,10 +79,10 @@ const TerminalEasterEgg = ({ isMatrixActive, setIsMatrixActive, setIsSnakeGameVi
             });
             break;
           case 'about':
-            addToOutput('I am a passionate developer who loves creating innovative solutions...', 'info');
+            addToOutput('Full Stack Engineer (Node.js · React.js · MySQL) with 3+ years building enterprise-grade web apps. Currently at OpenSpace Services leading development for Yazaki. Specialist in legacy system modernisation, scalable microservices, and LLM-powered workflows.', 'info');
             break;
           case 'skills':
-            addToOutput('React, Node.js, Python, AWS, Docker, and more...', 'info');
+            addToOutput('Languages: JavaScript (ES6+), TypeScript, Python, SQL, HTML5, CSS3 | Frontend: React.js, Redux, Bootstrap | Backend: Node.js, Express.js, RESTful APIs, Microservices, LangChain | Databases: MySQL, PostgreSQL, MongoDB, Sequelize ORM | DevOps: AWS, Docker, Git, Jenkins, CI/CD, Vite, JIRA', 'info');
             break;
           case 'clear':
             setOutput([]);

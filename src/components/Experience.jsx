@@ -4,30 +4,27 @@ import { FaBriefcase, FaGraduationCap } from "react-icons/fa";
 const Experience = () => {
   const experiences = [
     {
-      title: "Node.js Trainee",
+      title: "Full Stack Software Engineer",
       company: "OpenSpace Services",
       location: "Mumbai, India",
       period: "December 2024 – Present",
       description: [
-        "Developed comprehensive backend modules using Node.js, Express, and SQL to improve system functionality and data management.",
-        "Integrated Strapi CMS to manage and customize content, improving data consistency across platforms.",
-        "Designed and implemented 20+ project modules such as Project Master, Flowcell Master, and User Authentication systems.",
-        "Built robust API endpoints for seamless integration with third-party services.",
-        "Enhanced security protocols, including password management systems and profile customization tools.",
-        "Conducted rigorous testing and debugging to ensure optimal performance and system stability.",
+        "Led end-to-end development for enterprise client Yazaki, architecting scalable solutions with MySQL, React.js, and Node.js, accelerating project delivery against aggressive deadlines.",
+        "Architected 40+ backend modules using Node.js and Express.js, integrating RESTful APIs across 5+ client projects spanning healthcare, logistics, and industrial equipment.",
+        "Optimised SQL data models and queries via Sequelize ORM, improving application performance by 30% and enhancing data retrieval speeds.",
+        "Spearheaded legacy PHP-to-Node.js microservices migration, reducing response times by 40% and improving system scalability across monolithic and microservice architectures.",
       ],
       color: "from-blue-500/20 to-cyan-500/20",
     },
     {
-      title: "Freelance Developer",
-      company: "Self-Learning Projects",
-      location: "Remote",
-      period: "November 2023 – December 2024",
+      title: "Freelance Full Stack Developer",
+      company: "Consulting",
+      location: "Mumbai, India",
+      period: "December 2023 – November 2024",
       description: [
-        "Developed three large-scale freelance projects using Node.js, React, and SQL to build web-based systems with integrated REST APIs.",
-        "Created a Material Rates module that dynamically calculated cost structures based on input data, improving budget accuracy.",
-        "Built features like Currency Definitions, Reason Definitions, and Port Management to enhance system usability and data tracking.",
-        "Participated in continuous learning by completing advanced certification courses in Node.js, SQL, and Strapi.",
+        "Built a responsive React.js / Redux / Bootstrap front-end for Dolphin Furnishing India, improving user task completion rate by 25%.",
+        "Designed and launched the Trim Vault customer portal using HTML5, CSS3, and JavaScript with RESTful API integration.",
+        "Prototyped back-end CRUD services using Node.js, Express, MySQL, and MongoDB; enforced code quality via ESLint and Prettier; deployed on Netlify with Git version control.",
       ],
       color: "from-purple-500/20 to-pink-500/20",
     },
@@ -37,31 +34,19 @@ const Experience = () => {
       location: "Mumbai, India",
       period: "September 2022 – November 2023",
       description: [
-        "Developed WhatsApp chatbots using WhatsApp Business API, improving customer engagement and reducing response times by 50%.",
-        "Designed and implemented microservices to automate manual support tasks, boosting productivity by 30%.",
-        "Managed and enhanced internal operational systems using REST APIs, SQL, and Python.",
-        "Collaborated with Meta (Facebook) teams to resolve API-related issues for improved performance.",
+        "Developed and deployed 6+ WhatsApp chatbots via the WhatsApp Business API for clients including Netflix Turkey and Coca-Cola India, handling 20,000+ monthly interactions with 90%+ first-contact resolution.",
+        "Designed RESTful APIs, authored complex SQL queries, and automated data pipelines in Python — improving data processing throughput by 40%.",
+        "Collaborated directly with Meta engineering teams to troubleshoot WhatsApp API integrations, cutting message-delivery error rates by 50%.",
       ],
       color: "from-green-500/20 to-emerald-500/20",
-    },
-    {
-      title: "Technical Content Engineer Intern",
-      company: "Kalvi Educations",
-      location: "Remote",
-      period: "August 2022 – September 2022",
-      description: [
-        "Developed comprehensive web development courses for Angular, React, and JavaScript.",
-        "Created projects and assignments to enhance student learning outcomes.",
-      ],
-      color: "from-orange-500/20 to-red-500/20",
     },
   ];
 
   const education = {
-    degree: "Bachelor of Engineering in Information Technology",
-    school: "NMIMS University, Mumbai",
-    period: "Graduated January 2022",
-    gpa: "CGPA: 8.22/10",
+    degree: "B.Sc in Information Technology",
+    school: "NMF College, Mumbai",
+    period: "Graduated June 2022",
+    gpa: "CGPA: 8.22 / 10",
     color: "from-yellow-500/20 to-amber-500/20",
   };
 
@@ -86,14 +71,15 @@ const Experience = () => {
           </h2>
           <p className="text-textSecondary max-w-2xl mx-auto">
             My journey through various roles has shaped me into a versatile
-            full-stack developer with expertise in modern web technologies.
+            full-stack engineer with expertise in enterprise applications,
+            AI integration, and modern web technologies.
           </p>
         </motion.div>
 
         <div className="space-y-12">
           {experiences.map((exp, index) => (
             <motion.div
-              key={exp.title}
+              key={exp.title + exp.company}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
